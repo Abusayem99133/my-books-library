@@ -1,10 +1,10 @@
-const Home = () => {
+const Banner = () => {
   return (
     <div className="hero  w-[90%] ml-16 rounded-2xl bg-slate-200">
       <div className="flex  py-20 px-28 items-center flex-col lg:flex-row-reverse gap-20">
         <img
-          src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-          className="max-w-sm rounded-lg shadow-2xl"
+          src="./src/assets/img/thedatingplaybook-608x1024-removebg-preview.png"
+          className=" rounded-lg shadow-2xl"
         />
         <div>
           <h1 className="text-5xl font-bold">
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;
