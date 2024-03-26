@@ -1,12 +1,20 @@
-const Wishlist = () => {
+const ReadBook = ({ book }) => {
+  const {
+    image,
+    author,
+    tags,
+    yearOfPublishing,
+    publisher,
+    totalPages,
+    category,
+    rating,
+  } = book;
+  console.log(book);
   return (
     <div>
-      <div className="card card-side  border-2 border-gray-300 w-[80%] bg-base-50 shadow-xl">
+      <div className="card card-side mt-4  border-2 border-gray-300 w-[80%] bg-base-50 shadow-xl">
         <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-            alt="Movie"
-          />
+          <img className="w-52 p-4" src={image} alt="Movie" />
         </figure>
         <div className="card-body ">
           <h2 className="card-title">New movie is released!</h2>
@@ -53,4 +61,4 @@ const Wishlist = () => {
   );
 };
 
-export default Wishlist;
+export default ReadBook;

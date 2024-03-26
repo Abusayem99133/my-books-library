@@ -1,32 +1,35 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link, Outlet } from "react-router-dom";
-// import ReadAndWishList from "./ReadAndWishList";
-
-// import ReadBooks from "../ReadBooks";
 
 const ListedBooks = () => {
   const [tadIndex, setTabIndex] = useState(0);
   return (
-    <div>
+    <div className="">
       <h1 className="text-3xl font-bold text-center bg-slate-300 p-4">Book</h1>
-      <div className="text-center mt-6 text-lime-400">
+      <div className="text-center mt-6">
         <details className="dropdown">
           <summary className="m-1 btn  bg-lime-400">
             Sort By <IoIosArrowDown />
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
-              <a>Item 1</a>
+              <a>Sort By</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Rating</a>
+            </li>
+            <li>
+              <a> Number of Pages</a>
+            </li>
+            <li>
+              <a>Published Year</a>
             </li>
           </ul>
         </details>
       </div>
-      <div className="p-4">
-        <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap  text-gray-100">
+      <div>
+        <div className="flex items-center  -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap  text-gray-100">
           <Link
             to=""
             onClick={() => setTabIndex(0)}
@@ -71,8 +74,8 @@ const ListedBooks = () => {
             <span>Wishlist</span>
           </Link>
         </div>
-        <Outlet></Outlet>
       </div>
+      <Outlet></Outlet>
     </div>
   );
 };

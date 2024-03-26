@@ -2,11 +2,12 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { saveBookReadDetails } from "../utils/localStorage";
+
 const BooksDetails = () => {
   const bookDetails = useLoaderData();
   const { id } = useParams();
-  const idInteser = parseInt(id);
-  const bDetails = bookDetails.find((bDetails) => bDetails.id === idInteser);
+  const idInt = parseInt(id);
+  const bDetails = bookDetails.find((bDetails) => bDetails.id === idInt);
   const {
     author,
     bookName,
@@ -20,9 +21,9 @@ const BooksDetails = () => {
     totalPages,
     yearOfPublishing,
   } = bDetails;
-  console.log(bDetails);
+  // console.log(bDetails);
   //   console.log(bookDetails);
-  const handleReadBook = () => saveBookReadDetails(id);
+  const handleReadBook = () => saveBookReadDetails(idInt);
   toast.success("Already Read this Book.....!");
   const handleWishlistBook = () => toast.warning("Already read this Book ");
   return (
@@ -81,6 +82,9 @@ const BooksDetails = () => {
         </div>
       </div>
       <ToastContainer></ToastContainer>
+      {/* {bDetails.map((read) => (
+        <ReadBooks key={read.id} read={read}></ReadBooks>
+      ))} */}
     </div>
   );
 };
