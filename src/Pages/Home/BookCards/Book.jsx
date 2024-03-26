@@ -1,9 +1,20 @@
+import { Link } from "react-router-dom";
+
 const Book = ({ book }) => {
-  const { author, bookName, category, image, publisher, rating, review, tags } =
-    book;
-  console.log(book);
+  const {
+    author,
+    bookName,
+    category,
+    id,
+    image,
+    publisher,
+    rating,
+    review,
+    tags,
+  } = book;
+  // console.log(book);
   return (
-    <div>
+    <Link to={`/details/${id}`}>
       <div className="max-w-xs p-6 rounded-md shadow-md space-y-5 ">
         <img
           src={image}
@@ -31,7 +42,7 @@ const Book = ({ book }) => {
           <p>{rating}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
