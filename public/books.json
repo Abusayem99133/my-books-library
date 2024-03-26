@@ -1,9 +1,9 @@
 [
     {
-        "bookId": 1,
+        "id": 1,
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
-        "image": "gatsby.jpg",
+        "image": "https://iili.io/JjKhU6G.png",
         "review": "A timeless classic exploring the decadence of the Jazz Age.",
         "totalPages": 180,
         "rating": 4.5,
@@ -13,10 +13,10 @@
         "yearOfPublishing": 1925
     },
     {
-        "bookId": 2,
+        "id": 2,
         "bookName": "1984",
         "author": "George Orwell",
-        "image": "1984.jpg",
+        "image": "https://iili.io/JjKOpWP.png",
         "review": "A chilling dystopian novel depicting a totalitarian regime.",
         "totalPages": 328,
         "rating": 4.8,
@@ -26,10 +26,10 @@
         "yearOfPublishing": 1949
     },
     {
-        "bookId": 3,
+        "id": 3,
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
-        "image": "mockingbird.jpg",
+        "image": "https://iili.io/JjKeIgs.jpg",
         "review": "An unforgettable tale of racial injustice and moral growth in the American South.",
         "totalPages": 324,
         "rating": 4.7,
@@ -39,10 +39,10 @@
         "yearOfPublishing": 1960
     },
     {
-        "bookId": 4,
+        "id": 4,
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
-        "image": "catcher.jpg",
+        "image": "https://iili.io/JjKeZ4n.png",
         "review": "A poignant portrayal of adolescent angst and rebellion.",
         "totalPages": 224,
         "rating": 4.3,
@@ -52,10 +52,10 @@
         "yearOfPublishing": 1951
     },
     {
-        "bookId": 5,
+        "id": 5,
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
-        "image": "hobbit.jpg",
+        "image": "https://iili.io/JjKkV6X.png",
         "review": "A delightful adventure through Middle-earth, perfect for all ages.",
         "totalPages": 300,
         "rating": 4.6,
@@ -65,10 +65,10 @@
         "yearOfPublishing": 1937
     },
     {
-        "bookId": 6,
+        "id": 6,
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
-        "image": "pride.jpg",
+        "image": "https://iili.io/JjKkewl.jpg",
         "review": "A charming comedy of manners with timeless themes of love and societal norms.",
         "totalPages": 432,
         "rating": 4.9,
@@ -78,10 +78,10 @@
         "yearOfPublishing": 1813
     },
     {
-        "bookId": 7,
+        "id": 7,
         "bookName": "The Alchemist",
         "author": "Paulo Coelho",
-        "image": "alchemist.jpg",
+        "image": "https://iili.io/JjKvoSs.jpg",
         "review": "A transformative journey of self-discovery and destiny.",
         "totalPages": 208,
         "rating": 4.6,
@@ -91,10 +91,10 @@
         "yearOfPublishing": 1988
     },
     {
-        "bookId": 8,
+        "id": 8,
         "bookName": "Harry Potter and the Philosopher's Stone",
         "author": "J.K. Rowling",
-        "image": "harry_potter.jpg",
+        "image": "https://iili.io/JjK8udg.jpg",
         "review": "An enchanting tale of magic, friendship, and the battle between good and evil.",
         "totalPages": 320,
         "rating": 4.7,
@@ -104,10 +104,10 @@
         "yearOfPublishing": 1997
     },
     {
-        "bookId": 9,
+        "id": 9,
         "bookName": "The Lord of the Rings",
         "author": "J.R.R. Tolkien",
-        "image": "lotr.jpg",
+        "image": "https://iili.io/JjK8V7s.jpg",
         "review": "An epic fantasy masterpiece chronicling the quest to destroy the One Ring.",
         "totalPages": 1178,
         "rating": 4.8,

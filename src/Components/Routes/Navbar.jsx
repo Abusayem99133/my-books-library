@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,28 +26,28 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <NavLink>Home</NavLink>
+              <Link>Home</Link>
             </li>
             <li>
-              <NavLink>Listed Books</NavLink>
+              <Link>Listed Books</Link>
             </li>
             <li>
-              <NavLink>Pages to Read</NavLink>
+              <Link>Pages to Read</Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Book Vibe</a>
+        <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu space-x-8 menu-horizontal px-1">
           <li>
-            <NavLink>Home</NavLink>
+            <Link>Home</Link>
           </li>
           <li>
-            <NavLink>Listed Books</NavLink>
+            <Link>Listed Books</Link>
           </li>
           <li>
-            <NavLink>Pages to Read</NavLink>
+            <Link>Pages to Read</Link>
           </li>
         </ul>
       </div>
