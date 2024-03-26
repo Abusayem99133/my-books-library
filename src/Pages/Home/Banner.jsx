@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Banner = () => {
   return (
     <div className="hero  w-[90%] ml-16 rounded-2xl bg-slate-200">
@@ -11,9 +13,9 @@ const Banner = () => {
             Books to freshen up <br /> your bookshelf
           </h1>
 
-          <button className="btn bg-lime-500 mt-4 text-white">
+          <Link to="/listed" className="btn bg-lime-500 mt-4 text-white">
             View The List
-          </button>
+          </Link>
         </div>
       </div>
     </div>
