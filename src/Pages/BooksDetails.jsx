@@ -1,5 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { saveBookReadDetails } from "../utils/localStorage";
 const BooksDetails = () => {
   const bookDetails = useLoaderData();
   const { id } = useParams();
@@ -20,6 +22,9 @@ const BooksDetails = () => {
   } = bDetails;
   console.log(bDetails);
   //   console.log(bookDetails);
+  const handleReadBook = () => saveBookReadDetails(id);
+  toast.success("Already Read this Book.....!");
+  const handleWishlistBook = () => toast.warning("Already read this Book ");
   return (
     <div>
       <div className="hero min-h-screen ">
@@ -56,15 +61,26 @@ const BooksDetails = () => {
             </div>
             <div className="space-x-4 mt-4">
               <Link>
-                <button className="btn bg-lime-400 py-4 px-8">Read</button>
+                <button
+                  onClick={handleReadBook}
+                  className="btn bg-lime-400 py-4 px-8"
+                >
+                  Read
+                </button>
               </Link>
               <Link>
-                <button className="btn bg-lime-400 py-4 px-8">Wishlist</button>
+                <button
+                  onClick={handleWishlistBook}
+                  className="btn bg-lime-400 py-4 px-8"
+                >
+                  Wishlist
+                </button>
               </Link>
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
