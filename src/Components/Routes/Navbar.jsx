@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,13 +26,13 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/listed">Listed Books</Link>
+              <NavLink to="/listed">Listed Books</NavLink>
             </li>
             <li>
-              <Link>Pages to Read</Link>
+              <NavLink to="/pages">Pages to Read</NavLink>
             </li>
           </ul>
         </div>
@@ -41,13 +41,40 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu space-x-8 menu-horizontal px-1">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-lime-600 border-2 border-lime-500 hover:bg-lime-400 font-bold"
+                  : "font-bold"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/listed">Listed Books</Link>
+            <NavLink
+              to="/listed"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-lime-600 border-2 border-lime-500 hover:bg-lime-400 font-bold"
+                  : "font-bold"
+              }
+            >
+              Listed Books
+            </NavLink>
           </li>
           <li>
-            <Link>Pages to Read</Link>
+            <NavLink
+              to="/pages"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-lime-600 border-2 border-lime-500 hover:bg-lime-400 font-bold"
+                  : "font-bold"
+              }
+            >
+              Pages to Read
+            </NavLink>
           </li>
         </ul>
       </div>
