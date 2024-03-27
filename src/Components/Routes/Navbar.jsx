@@ -36,7 +36,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
+        <a className="btn btn-ghost text-3xl font-bold text-lime-600">
+          Book Vibe
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu space-x-8 menu-horizontal px-1">
@@ -78,7 +80,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="  md:navbar-end md:mr-20 sm:mt-12 md:mt-0 md:space-x-4">
+      <div className="mt-20 -ml-5 md:ml-0 md:mt-0 navbar-end space-x-4">
         <a className="btn bg-lime-500">Sign In</a>
         <a className="btn bg-teal-400">Sign up</a>
       </div>
