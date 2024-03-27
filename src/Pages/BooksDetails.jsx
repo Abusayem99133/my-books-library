@@ -30,7 +30,7 @@ const BooksDetails = () => {
     <div>
       <div className="hero min-h-screen ">
         <div className="hero-content space-x-6 flex-col lg:flex-row">
-          <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
+          <img src={image} className="md:max-w-sm rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-5xl mb-4 font-bold">{bookName}</h1>
             <span> By: {author}</span>
