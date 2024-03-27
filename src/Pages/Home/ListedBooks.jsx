@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
-  const [tadIndex, setTabIndex] = useState(0);
+  const [tabIndex, setTabIndex] = useState(0);
   return (
     <div className="">
       <h1 className="text-3xl font-bold text-center bg-slate-300 p-4">Book</h1>
@@ -34,7 +34,7 @@ const ListedBooks = () => {
             to=""
             onClick={() => setTabIndex(0)}
             className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
-              tadIndex === 0 ? "border border-b-0" : "border-b"
+              tabIndex === 0 ? "border border-b-0" : "border-b"
             } rounded-t-lg border-gray-400 text-black`}
           >
             <svg
@@ -55,7 +55,7 @@ const ListedBooks = () => {
             to="wishlist"
             onClick={() => setTabIndex(1)}
             className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
-              tadIndex === 1 ? "border border-b-0" : "border-b"
+              tabIndex === 1 ? "border border-b-0" : "border-b"
             } rounded-t-lg border-gray-400 text-black`}
           >
             <svg

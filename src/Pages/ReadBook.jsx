@@ -9,7 +9,7 @@ const ReadBook = ({ book }) => {
     category,
     rating,
   } = book;
-  console.log(book);
+  // console.log(book);
   return (
     <div>
       <div className="card card-side mt-4  border-2 border-gray-300 w-[80%] bg-base-50 shadow-xl">

@@ -1,4 +1,4 @@
-const getStoredBookDetials = () =>{
+const getStoredBookDetails = () =>{
     const storedBook = localStorage.getItem('read-books');
     if(storedBook){
     return JSON.parse(storedBook);
@@ -8,7 +8,7 @@ const getStoredBookDetials = () =>{
 
 
 const saveBookReadDetails = id=>{
-const storedBooks = getStoredBookDetials();
+const storedBooks = getStoredBookDetails();
 const exists = storedBooks.find(bookId => bookId === id)
 if(!exists){
     storedBooks.push(id);
@@ -16,4 +16,4 @@ if(!exists){
 }
 }
 
-export {getStoredBookDetials,saveBookReadDetails} 
+export {getStoredBookDetails,saveBookReadDetails} 

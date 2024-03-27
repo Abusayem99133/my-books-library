@@ -78,7 +78,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end mr-20 space-x-4">
+      <div className="  md:navbar-end md:mr-20 sm:mt-12 md:mt-0 md:space-x-4">
         <a className="btn bg-lime-500">Sign In</a>
         <a className="btn bg-teal-400">Sign up</a>
       </div>

@@ -5,7 +5,7 @@ import Navbar from "../Components/Routes/Navbar";
 
 const MainLayouts = () => {
   return (
-    <div>
+    <div className="md:ml-24 mr-24">
       <Navbar></Navbar>
       <Outlet></Outlet>
     </div>
