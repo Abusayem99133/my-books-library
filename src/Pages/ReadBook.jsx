@@ -1,6 +1,7 @@
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdContacts } from "react-icons/io";
 import { MdOutlineContactPage } from "react-icons/md";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 const ReadBook = ({ book }) => {
   const {
@@ -77,5 +78,7 @@ const ReadBook = ({ book }) => {
     </div>
   );
 };
-
+ReadBook.propTypes = {
+  book: PropTypes.array,
+};
 export default ReadBook;

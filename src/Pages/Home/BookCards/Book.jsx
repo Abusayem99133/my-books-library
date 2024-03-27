@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from "prop-types";
 const Book = ({ book }) => {
   const {
     author,
@@ -45,5 +45,7 @@ const Book = ({ book }) => {
     </Link>
   );
 };
-
+Book.propTypes = {
+  book: PropTypes.array,
+};
 export default Book;
