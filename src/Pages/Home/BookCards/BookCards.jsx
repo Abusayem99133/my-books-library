@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Book from "./Book";
-import Banner from "../Banner";
+import Banner from "../../../Components/Banner";
 
 const BookCards = () => {
   const books = useLoaderData();
