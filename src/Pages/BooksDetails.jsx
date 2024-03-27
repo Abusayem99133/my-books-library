@@ -1,7 +1,9 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { saveBookReadDetails } from "../utils/localStorage";
+import { saveBookToLocalStorage } from "../utils/saveBook/saveBook";
+import { saveWishToLocalStorage } from "../utils/saveWish";
+// import { ToastContainer } from "react-toastify";
 
 const BooksDetails = () => {
   const bookDetails = useLoaderData();
@@ -22,10 +24,15 @@ const BooksDetails = () => {
     yearOfPublishing,
   } = bDetails;
   // console.log(bDetails);
-  //   console.log(bookDetails);
-  const handleReadBook = () => saveBookReadDetails(idInt);
-  toast.success("Already Read this Book.....!");
-  const handleWishlistBook = () => toast.warning("Already read this Book ");
+
+  const handleReadBook = () => {
+    saveBookToLocalStorage(idInt);
+    toast.success("Already Read this Book.....!");
+  };
+  const handleWishlistBook = () => {
+    saveWishToLocalStorage(idInt);
+    toast.warning("Already read this Book ");
+  };
   return (
     <div>
       <div className="hero min-h-screen ">

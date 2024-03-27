@@ -9,6 +9,7 @@ import BooksDetails from "../../Pages/BooksDetails";
 import ReadBooks from "../../Pages/ReadBooks";
 import Wishlist from "../../Pages/Home/Wishlist";
 import BarChart from "./BarChart";
+import WishListDetails from "../../Pages/Home/WishListDetails";
 
 export const router = createBrowserRouter([
   {
@@ -25,15 +26,15 @@ export const router = createBrowserRouter([
         path: "/listed",
         element: <ListedBooks></ListedBooks>,
         children: [
+          // {
+          //   path: "",
+          //   element: <ReadBooks></ReadBooks>,
+          //   // element: <BookCards></BookCards>,
+          //   // loader: () => fetch("books.json"),
+          // },
           {
             path: "",
-            element: <ReadBooks></ReadBooks>,
-            // element: <BookCards></BookCards>,
-            // loader: () => fetch("books.json"),
-          },
-          {
-            path: "wishlist",
-            element: <Wishlist></Wishlist>,
+            element: <WishListDetails></WishListDetails>,
           },
         ],
       },
