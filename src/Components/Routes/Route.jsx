@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-// import Home from "../../Pages/Home/Banner";
+
 import MainLayouts from "../../Layouts/MainLayouts";
 import BookCards from "../../Pages/Home/BookCards/BookCards";
 import ListedBooks from "../../Pages/Home/ListedBooks";
@@ -8,6 +8,7 @@ import BooksDetails from "../../Pages/BooksDetails";
 
 import ReadBooks from "../../Pages/ReadBooks";
 import Wishlist from "../../Pages/Home/Wishlist";
+import BarChart from "./BarChart";
 
 export const router = createBrowserRouter([
   {
@@ -25,9 +26,10 @@ export const router = createBrowserRouter([
         element: <ListedBooks></ListedBooks>,
         children: [
           {
-            index: true,
+            path: "",
             element: <ReadBooks></ReadBooks>,
-            loader: () => fetch("books.json"),
+            // element: <BookCards></BookCards>,
+            // loader: () => fetch("books.json"),
           },
           {
             path: "wishlist",
@@ -39,6 +41,10 @@ export const router = createBrowserRouter([
         path: "/details/:id",
         element: <BooksDetails></BooksDetails>,
         loader: () => fetch("/books.json"),
+      },
+      {
+        path: "/pages",
+        element: <BarChart></BarChart>,
       },
     ],
   },

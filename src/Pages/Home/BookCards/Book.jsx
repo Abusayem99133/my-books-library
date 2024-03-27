@@ -1,21 +1,11 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 const Book = ({ book }) => {
-  const {
-    author,
-    bookName,
-    category,
-    id,
-    image,
-    publisher,
-    rating,
-    review,
-    tags,
-  } = book;
+  const { author, bookName, category, id, image, rating, tags } = book;
   // console.log(book);
   return (
     <Link to={`/details/${id}`}>
-      <div className="max-w-xs p-6 rounded-md shadow-md space-y-5 ">
+      <div className="max-w-xs p-6 rounded-md shadow-md space-y-5">
         <img
           src={image}
           alt=""
@@ -46,6 +36,6 @@ const Book = ({ book }) => {
   );
 };
 Book.propTypes = {
-  book: PropTypes.array,
+  book: PropTypes.object,
 };
 export default Book;

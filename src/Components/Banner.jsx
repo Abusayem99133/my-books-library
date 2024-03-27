@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Image from "../assets/img/thedatingplaybook-608x1024-removebg-preview.png";
 const Banner = () => {
   return (
-    <div className="ml-12 w-72 md:hero space-x-12 rounded-3xl bg-base-200">
+    <div className="ml-12 md:ml-0 w-72 md:hero space-x-12 rounded-3xl bg-base-200">
       <div className="md:hero-content flex-col md:flex-row-reverse ">
         <img src={Image} className="md:max-w-sm rounded-lg shadow-2xl" />
         <div className="">

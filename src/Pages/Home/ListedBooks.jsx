@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link, Outlet } from "react-router-dom";
+// import { Link, Outlet } from "react-router-dom";
+import ReadBooks from "../ReadBooks";
+import Wishlist from "./Wishlist";
+// import BookCards from "./BookCards/BookCards";
+// import ReadTab from "./ReadTab";
 
 const ListedBooks = () => {
-  const [tabIndex, setTabIndex] = useState(0);
+  const [tabIndex, setTabIndex] = useState(1);
+  // console.log(tabIndex);
   return (
     <div className="">
       <h1 className="text-3xl font-bold text-center bg-slate-300 p-4">Book</h1>
@@ -28,10 +33,11 @@ const ListedBooks = () => {
           </ul>
         </details>
       </div>
+      {/* <ReadTab></ReadTab> */}
       <div>
         <div className="flex items-center  -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap  text-gray-100">
-          <Link
-            to=""
+          <div
+            // to="/"
             onClick={() => setTabIndex(0)}
             className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
               tabIndex === 0 ? "border border-b-0" : "border-b"
@@ -49,10 +55,10 @@ const ListedBooks = () => {
             >
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
             </svg>
-            <span>Read</span>
-          </Link>
-          <Link
-            to="wishlist"
+            <span>Read Book</span>
+          </div>
+          <div
+            // to="wishlist"
             onClick={() => setTabIndex(1)}
             className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${
               tabIndex === 1 ? "border border-b-0" : "border-b"
@@ -72,10 +78,12 @@ const ListedBooks = () => {
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
             <span>Wishlist</span>
-          </Link>
+          </div>
         </div>
       </div>
-      <Outlet></Outlet>
+      {tabIndex !== 1 ? <ReadBooks /> : <Wishlist />}
+      {/* {tabIndex !== 1 && <Wishlist />} */}
+      {/* <Outlet></Outlet> */}
     </div>
   );
 };
