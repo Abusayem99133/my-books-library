@@ -13,7 +13,7 @@ import {
 } from "recharts";
 import { scaleOrdinal } from "d3-scale";
 import { schemeCategory10 } from "d3-scale-chromatic";
-import { data } from "autoprefixer";
+
 import { filterDataBySavedBooks } from "../../utils/filterBook";
 
 const colors = scaleOrdinal(schemeCategory10).range();
@@ -47,35 +47,37 @@ export default function BarChart() {
   // console.log(booksArea);
   return (
     <>
-      {booksArea?.length > 0 && (
-        <BarCH
-          width={500}
-          height={300}
-          data={booksArea}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-
-          <XAxis dataKey="bookName" />
-          <YAxis />
-          <Tooltip></Tooltip>
-          <Bar
-            dataKey="totalPages"
-            fill="#8884d8"
-            shape={<TriangleBar />}
-            label={{ position: "top" }}
+      <ResponsiveContainer height={500}>
+        {booksArea?.length > 0 && (
+          <BarCH
+            width={500}
+            height={300}
+            data={booksArea}
+            margin={{
+              top: 20,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
           >
-            {booksArea.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-            ))}
-          </Bar>
-        </BarCH>
-      )}
+            <CartesianGrid strokeDasharray="3 3" />
+
+            <XAxis dataKey="bookName" />
+            <YAxis />
+            <Tooltip></Tooltip>
+            <Bar
+              dataKey="totalPages"
+              fill="#8884d8"
+              shape={<TriangleBar />}
+              label={{ position: "top" }}
+            >
+              {booksArea.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+              ))}
+            </Bar>
+          </BarCH>
+        )}
+      </ResponsiveContainer>
     </>
   );
 }
