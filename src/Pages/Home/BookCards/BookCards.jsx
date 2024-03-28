@@ -12,7 +12,7 @@ const BookCards = () => {
       <div className="mt-20  items-center">
         <h1 className="text-5xl font-bold text-[#131313] text-center">Book</h1>
 
-        <div className="grid md:grid-cols-3 mt-6">
+        <div className="grid md:grid-cols-3 mt-6 gap-8">
           {books.map((book) => (
             <Book key={book.id} book={book}></Book>
           ))}

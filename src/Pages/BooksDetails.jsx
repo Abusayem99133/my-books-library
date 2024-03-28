@@ -27,11 +27,14 @@ const BooksDetails = () => {
 
   const handleReadBook = () => {
     saveBookToLocalStorage(idInt);
-    toast.success("Already Read this Book.....!");
+    // toast.success(" Read this Book.....!");
+
+    // toast.warning("Already Read this Book...!");
   };
+
   const handleWishlistBook = () => {
     saveWishToLocalStorage(idInt);
-    toast.warning("Already read this Book ");
+    // toast.warning("Already read this Book ");
   };
   return (
     <div>

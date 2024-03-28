@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "book_name": "To Kill a Mockingbird",
+      "price": 12.99,
+      "image": "https://iili.io/JjhD6W7.png",
+      "rating": 4.5,
+      "author": "Harper Lee",
+      "library_name": "Central Library"
+    },
+    {
+      "id": 2,
+      "book_name": "BookName:1984",
+      "price": 9.99,
+      "image": "https://iili.io/JjhbRdG.jpg",
+      "rating": 4.8,
+      "author": "George Orwell",
+      "library_name": "City Public Library"
+    },
+    {
+      "id": 3,
+      "book_name": "The Great Gatsby",
+      "price": 11.50,
+      "image": "https://iili.io/Jjhb4kv.jpg",
+      "rating": 4.3,
+      "author": "F. Scott Fitzgerald",
+      "library_name": "Downtown Library"
+    },
+    {
+      "id": 4,
+      "book_name": "Pride and Prejudice",
+      "price": 10.25,
+      "image": "https://iili.io/JjjK1g2.jpg",
+      "rating": 4.6,
+      "author": "Jane Austen",
+      "library_name": "City Public Library"
+    },
+    {
+      "id": 5,
+      "book_name": "The Catcher in the Rye",
+      "price": 8.75,
+      "image": "https://iili.io/JjjKS5P.png",
+      "rating": 4.2,
+      "author": "J.D. Salinger",
+      "library_name": "Central Library"
+    },
+    {
+      "id": 6,
+      "book_name": "To Kill a Mockingbird",
+      "price": 12.99,
+      "image": "https://iili.io/JjwTrdu.jpg",
+      "rating": 4.5,
+      "author": "Harper Lee",
+      "library_name": "City Public Library"
+    },
+    {
+      "id": 7,
+      "book_name": "Lord of the Flies",
+      "price": 10.99,
+      "image": "https://iili.io/Jjwuy67.jpg",
+      "rating": 4.1,
+      "author": "William Golding",
+      "library_name": "Downtown Library"
+    },
+    {
+      "id": 8,
+      "book_name": "Animal Farm",
+      "price": 9.25,
+      "image": "https://iili.io/JjwR9xR.png",
+      "rating": 4.7,
+      "author": "George Orwell",
+      "library_name": "Central Library"
+    },
+    {
+      "id": 9,
+      "book_name": "Brave New World",
+      "price": 11.75,
+      "image": "https://iili.io/Jjw5rGV.jpg",
+      "rating": 4.4,
+      "author": "Aldous Huxley",
+      "library_name": "City Public Library"
+    }
+  ]
+  

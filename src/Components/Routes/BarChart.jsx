@@ -1,6 +1,6 @@
 // import "./styles.css";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BarChart as BarCH,
   Bar,

@@ -10,6 +10,8 @@ import ReadBooks from "../../Pages/ReadBooks";
 import Wishlist from "../../Pages/Home/Wishlist";
 import BarChart from "./BarChart";
 import WishListDetails from "../../Pages/Home/WishListDetails";
+import NewCollection from "../NewCollection";
+import AboutPages from "../AboutPages";
 
 export const router = createBrowserRouter([
   {
@@ -46,6 +48,14 @@ export const router = createBrowserRouter([
       {
         path: "/pages",
         element: <BarChart></BarChart>,
+      },
+      {
+        path: "/newCollection",
+        element: <NewCollection></NewCollection>,
+      },
+      {
+        path: "/about",
+        element: <AboutPages></AboutPages>,
       },
     ],
   },

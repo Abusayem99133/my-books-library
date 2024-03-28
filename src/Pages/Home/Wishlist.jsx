@@ -17,7 +17,7 @@ const Wishlist = ({ bookWish }) => {
     totalPages,
     yearOfPublishing,
   } = bookWish;
-  console.log(bookWish);
+  // console.log(bookWish);
   return (
     <div>
       <div className="card md:card-side  -mr-24 md:-mr-0 mt-4  border-2 border-gray-300 md:w-[80%] bg-base-50 shadow-xl">

@@ -34,6 +34,12 @@ const Navbar = () => {
             <li>
               <NavLink to="/pages">Pages to Read</NavLink>
             </li>
+            <li>
+              <NavLink to="/newCollection">New Collection</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About Pages</NavLink>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-3xl font-bold text-lime-600">
@@ -76,6 +82,30 @@ const Navbar = () => {
               }
             >
               Pages to Read
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/newCollection"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-lime-600 border-2 border-lime-500 hover:bg-lime-400 font-bold"
+                  : "font-bold"
+              }
+            >
+              New Collection
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-lime-600 border-2 border-lime-500 hover:bg-lime-400 font-bold"
+                  : "font-bold"
+              }
+            >
+              About Pages
             </NavLink>
           </li>
         </ul>
