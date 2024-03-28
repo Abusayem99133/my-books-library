@@ -9,6 +9,6 @@ export  const saveBookToLocalStorage = (bookId) => {
       localStorage.setItem('savedBooks', JSON.stringify(savedBooks));
       toast.success('Added to Read')
     }else{
-      toast.warning('Allready added to read book')
+      toast.warning('Already added to read book')
     }
   };

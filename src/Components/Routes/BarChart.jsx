@@ -8,9 +8,13 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
 } from "recharts";
 import { scaleOrdinal } from "d3-scale";
 import { schemeCategory10 } from "d3-scale-chromatic";
+import { data } from "autoprefixer";
+import { filterDataBySavedBooks } from "../../utils/filterBook";
 
 const colors = scaleOrdinal(schemeCategory10).range();
 
@@ -37,13 +41,17 @@ export default function BarChart() {
       .then((res) => res.json())
       .then((data) => setDatas(data));
   }, []);
+  // console.log(datas);
+  const daynamicData = localStorage.getItem("savedBooks");
+  const booksArea = filterDataBySavedBooks(datas);
+  // console.log(booksArea);
   return (
     <>
-      {datas?.length > 0 && (
+      {booksArea?.length > 0 && (
         <BarCH
           width={500}
           height={300}
-          data={datas}
+          data={booksArea}
           margin={{
             top: 20,
             right: 30,
@@ -52,15 +60,17 @@ export default function BarChart() {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
+
           <XAxis dataKey="bookName" />
           <YAxis />
+          <Tooltip></Tooltip>
           <Bar
             dataKey="totalPages"
             fill="#8884d8"
             shape={<TriangleBar />}
             label={{ position: "top" }}
           >
-            {datas.map((entry, index) => (
+            {booksArea.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index % 20]} />
             ))}
           </Bar>

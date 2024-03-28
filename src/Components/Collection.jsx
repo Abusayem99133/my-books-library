@@ -1,5 +1,7 @@
+import PropTypes from "prop-types";
+
 const Collection = ({ collection }) => {
-  console.log(collection);
+  //   console.log(collection);
   const { image, book_name, author, library_name, price, rating } = collection;
   return (
     <div>
@@ -25,5 +27,7 @@ const Collection = ({ collection }) => {
     </div>
   );
 };
-
+Collection.propTypes = {
+  collection: PropTypes.object,
+};
 export default Collection;
