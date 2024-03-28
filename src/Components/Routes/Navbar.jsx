@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-50 rounded-box w-52"
           >
             <li>
               <NavLink to="/">Home</NavLink>
@@ -110,7 +110,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="mt-20 -ml-5 md:ml-0 md:mt-0 navbar-end space-x-4">
+      <div className="mt-20 -ml-5  md:ml-0 md:mt-0  navbar-end space-x-4">
         <a className="btn bg-lime-500">Sign In</a>
         <a className="btn bg-teal-400">Sign up</a>
       </div>

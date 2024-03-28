@@ -23,18 +23,13 @@ const BooksDetails = () => {
     totalPages,
     yearOfPublishing,
   } = bDetails;
-  // console.log(bDetails);
 
   const handleReadBook = () => {
     saveBookToLocalStorage(idInt);
-    // toast.success(" Read this Book.....!");
-
-    // toast.warning("Already Read this Book...!");
   };
 
   const handleWishlistBook = () => {
     saveWishToLocalStorage(idInt);
-    // toast.warning("Already read this Book ");
   };
   return (
     <div>
